@@ -2,6 +2,8 @@
 
 This project demonstrates a simple AI-assisted **policy management graph** using **Neo4j**, **Node.js (TypeScript)**, and a **React (Vite) graph viewer**.
 
+![alt text](https://github.com/murdock/neo4j_node/blob/develop/Screenshot%202025-11-27%20at%2017.06.56.png?raw=true)
+
 ## Features
 
 * Store **Policies**, **Clauses**, and **Requirements** in a Neo4j graph
