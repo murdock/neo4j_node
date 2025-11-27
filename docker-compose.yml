@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "3001:3001"
+      - "5173:5173"
+    env_file:
+      - .env
+    environment:
+      DOCKER: "true"
+    depends_on:
+      - neo4j
+
+  neo4j:
+    image: neo4j:5
+    ports:
+      - "7687:7687"
+      - "7474:7474"
+    environment:
+      NEO4J_AUTH: "${NEO4J_USER:-neo4j}/${NEO4J_PASS:-password}"

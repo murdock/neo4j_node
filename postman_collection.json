@@ -1,0 +1,236 @@
+{
+  "info": {
+    "name": "Neo4j Node API Full Sample Data",
+    "_postman_id": "replace-with-uuid",
+    "description": "Expanded sample POST requests for testing the Policy-Clause-Requirement API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Policies",
+      "item": [
+        {
+          "name": "Policy 1 - Data Protection",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"policy1\", \"title\": \"Data Protection Policy\" }" },
+            "url": { "raw": "http://localhost:3001/policy", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["policy"] }
+          }
+        },
+        {
+          "name": "Policy 2 - Security",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"policy2\", \"title\": \"Security Policy\" }" },
+            "url": { "raw": "http://localhost:3001/policy", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["policy"] }
+          }
+        },
+        {
+          "name": "Policy 3 - Compliance",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"policy3\", \"title\": \"Compliance Policy\" }" },
+            "url": { "raw": "http://localhost:3001/policy", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["policy"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clauses & Requirements",
+      "item": [
+        {
+          "name": "Clause 1 - Policy 1",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p1c1\", \"text\": \"Encrypt user data.\", \"policyId\": \"policy1\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 2 - Policy 1",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p1c2\", \"text\": \"Backup data daily.\", \"policyId\": \"policy1\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 3 - Policy 1",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p1c3\", \"text\": \"Limit access to sensitive data.\", \"policyId\": \"policy1\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 1 - Policy 2",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p2c1\", \"text\": \"Password policy enforcement.\", \"policyId\": \"policy2\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 2 - Policy 2",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p2c2\", \"text\": \"Enable MFA for all accounts.\", \"policyId\": \"policy2\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 3 - Policy 2",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p2c3\", \"text\": \"Regular security audits.\", \"policyId\": \"policy2\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 1 - Policy 3",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p3c1\", \"text\": \"Annual compliance report.\", \"policyId\": \"policy3\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 2 - Policy 3",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p3c2\", \"text\": \"Training for employees.\", \"policyId\": \"policy3\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+          "name": "Clause 3 - Policy 3",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"id\": \"p3c3\", \"text\": \"Document retention rules.\", \"policyId\": \"policy3\" }" },
+            "url": { "raw": "http://localhost:3001/clause", "protocol": "http", "host": ["localhost"], "port": "3001", "path": ["clause"] }
+          }
+        },
+        {
+            "name": "Requirement 1 - Clause p1c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p1c1r1\",\"text\":\"Use AES-256 encryption.\",\"clauseId\":\"p1c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p1c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p1c1r2\",\"text\":\"Encrypt data at rest and in transit.\",\"clauseId\":\"p1c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 1 - Clause p1c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p1c2r1\",\"text\":\"Require multi-factor authentication.\",\"clauseId\":\"p1c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p1c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p1c2r2\",\"text\":\"Log all access attempts.\",\"clauseId\":\"p1c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 1 - Clause p2c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p2c1r1\",\"text\":\"Assign roles based on least privilege.\",\"clauseId\":\"p2c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p2c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p2c1r2\",\"text\":\"Revoke access immediately when no longer needed.\",\"clauseId\":\"p2c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 1 - Clause p2c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p2c2r1\",\"text\":\"Monitor user activities for anomalies.\",\"clauseId\":\"p2c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p2c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p2c2r2\",\"text\":\"Audit user permissions quarterly.\",\"clauseId\":\"p2c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 1 - Clause p3c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p3c1r1\",\"text\":\"Follow GDPR compliance.\",\"clauseId\":\"p3c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p3c1",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p3c1r2\",\"text\":\"Ensure data retention policies are met.\",\"clauseId\":\"p3c1\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 1 - Clause p3c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p3c2r1\",\"text\":\"Maintain audit logs for compliance.\",\"clauseId\":\"p3c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        },
+        {
+            "name": "Requirement 2 - Clause p3c2",
+            "request": {
+            "method": "POST",
+            "header": [{"key":"Content-Type","value":"application/json"}],
+            "body":{"mode":"raw","raw":"{\"id\":\"p3c2r2\",\"text\":\"Perform regular compliance checks.\",\"clauseId\":\"p3c2\"}"},
+            "url":{"raw":"http://localhost:3001/requirement","protocol":"http","host":["localhost"],"port":"3001","path":["requirement"]}
+            }
+        }
+      ]
+    }
+  ]
+}

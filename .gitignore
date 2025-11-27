@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+.pnpm-store/
+.pnpm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+*.tsbuildinfo
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite / CRA / React
+*.cache
+.vite/
+.idea/
+.vscode/
+
+# Neo4j
+data/
+import/
+transactions/
+
+# Docker
+docker-compose.override.yml
+*.docker
+.Dockerfile
+
+# OS
+.DS_Store
+Thumbs.db
