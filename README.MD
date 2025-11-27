@@ -59,7 +59,8 @@ docker-compose up --build
 
 **Create Policy**
 
-```curl -X POST http://localhost:3001/policy \
+```
+curl -X POST http://localhost:3001/policy \
 -H "Content-Type: application/json" \
 -d '{
   "id": "policy-001",
